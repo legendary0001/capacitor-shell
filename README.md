@@ -23,7 +23,7 @@ npx cap sync
 ### echo(...)
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+executeCommand(options: { value: string; }) => Promise<{ value: string; }>
 ```
 
 | Param         | Type                            |
