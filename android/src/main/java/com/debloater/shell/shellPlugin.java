@@ -4,19 +4,18 @@ import com.getcapacitor.JSObject;
 import com.getcapacitor.Plugin;
 import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
-import com.getcapacitor.annotation.CapacitorPlugin;
 
-@CapacitorPlugin(name = "shell")
-public class shellPlugin extends Plugin {
+public class ShellPlugin extends Plugin {
 
-    private shell implementation = new shell();
+    private Shell shell;
+
+    @Override
+    public void load() {
+        shell = new Shell();
+    }
 
     @PluginMethod
-    public void echo(PluginCall call) {
-        String value = call.getString("value");
-
-        JSObject ret = new JSObject();
-        ret.put("value", implementation.echo(value));
-        call.resolve(ret);
+    public void executeCommand(PluginCall call) {
+        shell.executeCommand(call);
     }
 }

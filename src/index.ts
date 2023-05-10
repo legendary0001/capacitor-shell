@@ -1,10 +1,10 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { shellPlugin } from './definitions';
+import type { ShellPlugin } from './definitions';
 
-const shell = registerPlugin<shellPlugin>('shell', {
+const Shell = registerPlugin<shellPlugin>('Shell', {
   web: () => import('./web').then(m => new m.shellWeb()),
 });
 
 export * from './definitions';
-export { shell };
+export { Shell };

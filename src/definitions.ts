@@ -1,3 +1,3 @@
-export interface shellPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+export interface ShellPlugin {
+  executeCommand(options: { command: string }): Promise<{ output: string }>;
 }
