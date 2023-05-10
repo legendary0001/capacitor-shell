@@ -28,7 +28,7 @@ executeCommand(options: { command: string })
 
 | Param         | Type                            |
 | ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
+| **`options`** | <code>{ command: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ output: string; }&gt;</code>
 
