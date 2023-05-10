@@ -13,24 +13,24 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`executeCommand(...)`](#executeCommand)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### executeCommand(...)
 
 ```typescript
-executeCommand(options: { value: string; }) => Promise<{ value: string; }>
-```
+executeCommand(options: { command: string })
+  ```
 
 | Param         | Type                            |
 | ------------- | ------------------------------- |
 | **`options`** | <code>{ value: string; }</code> |
 
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ output: string; }&gt;</code>
 
 --------------------
 
