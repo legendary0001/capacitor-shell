@@ -1,6 +1,6 @@
 {
   "name": "capacitor-shell",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "android shell capacitor plugin",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

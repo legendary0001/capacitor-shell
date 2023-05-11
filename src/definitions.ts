@@ -3,5 +3,5 @@
 
 
 export interface ShellPlugin {
-  executeCommand(options   : { command: string }): Promise<{ output: string }>;
+  executeCommand(options   : { command: string }): Promise<{ output: string , exitCode: number}>;
 }
