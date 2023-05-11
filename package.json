@@ -1,6 +1,6 @@
 {
   "name": "capacitor-shell",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "android shell capacitor plugin",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -38,7 +38,7 @@
     "eslint": "eslint . --ext ts",
     "prettier": "prettier \"**/*.{css,html,ts,js,java}\"",
     "swiftlint": "node-swiftlint",
-    "docgen": "docgen --api shellPlugin --output-readme README.md --output-json dist/docs.json",
+    "docgen": "docgen --api ShellPlugin --output-readme README.md --output-json dist/docs.json",
     "build": "npm run clean && npm run docgen && tsc && rollup -c rollup.config.js",
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
@@ -68,9 +68,11 @@
     "extends": "@ionic/eslint-config/recommended"
   },
   "capacitor": {
-   
     "android": {
       "src": "android"
     }
+  },
+  "dependencies": {
+    "@capacitor/cli": "^5.0.3"
   }
 }

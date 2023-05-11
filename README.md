@@ -13,7 +13,7 @@ npx cap sync
 
 <docgen-index>
 
-* [`executeCommand(...)`](#executeCommand)
+* [`executeCommand(...)`](#executecommand)
 
 </docgen-index>
 
@@ -23,11 +23,11 @@ npx cap sync
 ### executeCommand(...)
 
 ```typescript
-executeCommand(options: { command: string })
-  ```
+executeCommand(options: { command: string; }) => Promise<{ output: string; }>
+```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
+| Param         | Type                              |
+| ------------- | --------------------------------- |
 | **`options`** | <code>{ command: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ output: string; }&gt;</code>
